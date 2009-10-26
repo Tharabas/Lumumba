@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		DD29A8B8109F11E000A003A0 /* NSEvent+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29A8B6109F11E000A003A0 /* NSEvent+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD29A8B9109F11E000A003A0 /* NSEvent+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29A8B7109F11E000A003A0 /* NSEvent+TH.m */; };
+		DD2EB13F110EF0A80017D0D1 /* THQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2EB13D110EF0A80017D0D1 /* THQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD2EB140110EF0A80017D0D1 /* THQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2EB13E110EF0A80017D0D1 /* THQueue.m */; };
+		DD32A2B710D23D93005D88F6 /* NSData+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DD32A2B510D23D93005D88F6 /* NSData+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD32A2B810D23D93005D88F6 /* NSData+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD32A2B610D23D93005D88F6 /* NSData+TH.m */; };
+		DD379BA310F4C617006F8553 /* NSTabView+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DD379BA110F4C617006F8553 /* NSTabView+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD379BA410F4C617006F8553 /* NSTabView+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD379BA210F4C617006F8553 /* NSTabView+TH.m */; };
+		DD6B0BAC1092DE4200900A48 /* NSMutableString+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6B0BAA1092DE4200900A48 /* NSMutableString+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD6B0BAD1092DE4200900A48 /* NSMutableString+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6B0BAB1092DE4200900A48 /* NSMutableString+TH.m */; };
+		DD6B0C451092FA2F00900A48 /* ColorBlendColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6B0C431092FA2F00900A48 /* ColorBlendColumn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD6B0C461092FA2F00900A48 /* ColorBlendColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6B0C441092FA2F00900A48 /* ColorBlendColumn.m */; };
+		DD6ED8061094914B0084F67E /* NSSet+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6ED8041094914B0084F67E /* NSSet+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD6ED8071094914B0084F67E /* NSSet+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6ED8051094914B0084F67E /* NSSet+TH.m */; };
+		DD6ED81A1094A9A70084F67E /* THJunctionCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6ED8181094A9A70084F67E /* THJunctionCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD6ED81B1094A9A70084F67E /* THJunctionCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6ED8191094A9A70084F67E /* THJunctionCategories.m */; };
+		DD6ED8601094E0340084F67E /* th_transition.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6ED85E1094E0340084F67E /* th_transition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD6ED8611094E0340084F67E /* th_transition.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6ED85F1094E0340084F67E /* th_transition.m */; };
+		DD6ED963109597270084F67E /* THSegmentedRect.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6ED961109597270084F67E /* THSegmentedRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD6ED964109597270084F67E /* THSegmentedRect.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6ED962109597270084F67E /* THSegmentedRect.m */; };
+		DD6EDA001095D2580084F67E /* NSDate+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6ED9FE1095D2580084F67E /* NSDate+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD6EDA011095D2580084F67E /* NSDate+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6ED9FF1095D2580084F67E /* NSDate+TH.m */; };
+		DD86CD1F11195E5C008231E1 /* NSBezierPath+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DD86CD1D11195E5C008231E1 /* NSBezierPath+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD86CD2011195E5C008231E1 /* NSBezierPath+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD86CD1E11195E5C008231E1 /* NSBezierPath+TH.m */; };
+		DDB115AA1074C235003E3884 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB115A91074C235003E3884 /* QuartzCore.framework */; };
+		DDB115BC1074C367003E3884 /* NSArray+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115B11074C367003E3884 /* NSArray+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115BD1074C367003E3884 /* NSArray+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115B21074C367003E3884 /* NSArray+TH.m */; };
+		DDB115BE1074C367003E3884 /* NSMutableArray+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115B31074C367003E3884 /* NSMutableArray+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115BF1074C367003E3884 /* NSMutableArray+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115B41074C367003E3884 /* NSMutableArray+TH.m */; };
+		DDB115C01074C367003E3884 /* NSObject+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115B51074C367003E3884 /* NSObject+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115C11074C367003E3884 /* NSObject+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115B61074C367003E3884 /* NSObject+TH.m */; };
+		DDB115C21074C367003E3884 /* NSString+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115B71074C367003E3884 /* NSString+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115C31074C367003E3884 /* NSString+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115B81074C367003E3884 /* NSString+TH.m */; };
+		DDB115C41074C367003E3884 /* NSView+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115B91074C367003E3884 /* NSView+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115C51074C367003E3884 /* NSView+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115BA1074C367003E3884 /* NSView+TH.m */; };
+		DDB115C61074C367003E3884 /* THCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115BB1074C367003E3884 /* THCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115D31074C378003E3884 /* THGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115C71074C378003E3884 /* THGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115D51074C378003E3884 /* THGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115C91074C378003E3884 /* THGrid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115D61074C378003E3884 /* THGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115CA1074C378003E3884 /* THGrid.m */; };
+		DDB115D71074C378003E3884 /* THMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115CB1074C378003E3884 /* THMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115D81074C378003E3884 /* THMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115CC1074C378003E3884 /* THMatrix.m */; };
+		DDB115D91074C378003E3884 /* THPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115CD1074C378003E3884 /* THPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115DA1074C378003E3884 /* THPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115CE1074C378003E3884 /* THPoint.m */; };
+		DDB115DB1074C378003E3884 /* THRect.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115CF1074C378003E3884 /* THRect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115DC1074C378003E3884 /* THRect.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115D01074C378003E3884 /* THRect.m */; };
+		DDB115DD1074C378003E3884 /* THSize.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115D11074C378003E3884 /* THSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115DE1074C378003E3884 /* THSize.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115D21074C378003E3884 /* THSize.m */; };
+		DDB115E11074C38A003E3884 /* RushGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115DF1074C38A003E3884 /* RushGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB115E21074C38A003E3884 /* RushGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115E01074C38A003E3884 /* RushGridView.m */; };
+		DDB116121074C8A7003E3884 /* Lumumba.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB116111074C8A7003E3884 /* Lumumba.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB116B11074DDBD003E3884 /* UI.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB116B01074DDBD003E3884 /* UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB1171A1074E276003E3884 /* NSColor+Conversion.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB117181074E276003E3884 /* NSColor+Conversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB1171B1074E276003E3884 /* NSColor+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB117191074E276003E3884 /* NSColor+Conversion.m */; };
+		DDB117261074E2C3003E3884 /* ColorBlendCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB117241074E2C3003E3884 /* ColorBlendCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB117271074E2C3003E3884 /* ColorBlendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB117251074E2C3003E3884 /* ColorBlendCell.m */; };
+		DDB3BE9510988382005A08F6 /* THGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB3BE9310988382005A08F6 /* THGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB3BE9610988382005A08F6 /* THGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB3BE9410988382005A08F6 /* THGradient.m */; };
+		DDB3C0FB1098EFCD005A08F6 /* THWebNamedColors.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB3C0F91098EFCD005A08F6 /* THWebNamedColors.h */; };
+		DDB3C0FC1098EFCD005A08F6 /* THWebNamedColors.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB3C0FA1098EFCD005A08F6 /* THWebNamedColors.m */; };
+		DDB3C1D21099C10C005A08F6 /* NSAttributedString+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB3C1D01099C10C005A08F6 /* NSAttributedString+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB3C1D31099C10C005A08F6 /* NSAttributedString+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB3C1D11099C10C005A08F6 /* NSAttributedString+TH.m */; };
+		DDB3C3B7109AE822005A08F6 /* NSFont+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB3C3B5109AE822005A08F6 /* NSFont+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB3C3B8109AE822005A08F6 /* NSFont+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB3C3B6109AE822005A08F6 /* NSFont+TH.m */; };
+		DDB3C8A3109C3163005A08F6 /* THDateRange.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB3C87D109C20DE005A08F6 /* THDateRange.m */; };
+		DDB3C8BB109C317F005A08F6 /* THDateRange.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB3C87C109C20DE005A08F6 /* THDateRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB42C3D10A0CBF2002B5642 /* NSAffineTransform+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB42C3B10A0CBF2002B5642 /* NSAffineTransform+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB42C3E10A0CBF2002B5642 /* NSAffineTransform+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB42C3C10A0CBF2002B5642 /* NSAffineTransform+TH.m */; };
+		DDB42DA210A1BD8E002B5642 /* THFlowWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB42DA010A1BD8E002B5642 /* THFlowWindow.h */; };
+		DDB42DA310A1BD8E002B5642 /* THFlowWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB42DA110A1BD8E002B5642 /* THFlowWindow.m */; };
+		DDB4713B10AAB152001EA777 /* THControllerCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB4713910AAB152001EA777 /* THControllerCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB4713C10AAB152001EA777 /* THControllerCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB4713A10AAB152001EA777 /* THControllerCategories.m */; };
+		DDB4713E10AAB1CF001EA777 /* THFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB4713D10AAB1CF001EA777 /* THFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB4719F10AADDB9001EA777 /* NSNumber+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB4719D10AADDB9001EA777 /* NSNumber+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB471A010AADDB9001EA777 /* NSNumber+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB4719E10AADDB9001EA777 /* NSNumber+TH.m */; };
+		DDBF6EAD10AFF9120002F02E /* THSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = DDBF6E8F10AFF82D0002F02E /* THSugar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDC5887410DCFF3F007CF3AB /* THTreeMap.h in Headers */ = {isa = PBXBuildFile; fileRef = DDC5887210DCFF3F007CF3AB /* THTreeMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDC5887510DCFF3F007CF3AB /* THTreeMap.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC5887310DCFF3F007CF3AB /* THTreeMap.m */; };
+		DDCCAC1F11ADC49A0087BAAE /* ColorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DDCCAC1D11ADC49A0087BAAE /* ColorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDCCAC2011ADC49A0087BAAE /* ColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCCAC1E11ADC49A0087BAAE /* ColorManager.m */; };
+		DDCE959711315D960047DCBE /* THSearchField.h in Headers */ = {isa = PBXBuildFile; fileRef = DDCE959511315D960047DCBE /* THSearchField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDCE959811315D960047DCBE /* THSearchField.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCE959611315D960047DCBE /* THSearchField.m */; };
+		DDF4BB6010A6D1770066702B /* THArgList.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF4BB5E10A6D1770066702B /* THArgList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDF4BB6110A6D1770066702B /* THArgList.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4BB5F10A6D1770066702B /* THArgList.m */; };
+		DDF5678E10B55C09007445C0 /* THGeometricFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = DDF5678C10B55C09007445C0 /* THGeometricFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDF5678F10B55C09007445C0 /* THGeometricFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF5678D10B55C09007445C0 /* THGeometricFunctions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* Lumumba_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lumumba_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* Lumumba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lumumba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		DD29A8B6109F11E000A003A0 /* NSEvent+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSEvent+TH.h"; path = "src/tharabas/categories/NSEvent+TH.h"; sourceTree = "<group>"; };
+		DD29A8B7109F11E000A003A0 /* NSEvent+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSEvent+TH.m"; path = "src/tharabas/categories/NSEvent+TH.m"; sourceTree = "<group>"; };
+		DD2EB13D110EF0A80017D0D1 /* THQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THQueue.h; path = src/tharabas/util/THQueue.h; sourceTree = "<group>"; };
+		DD2EB13E110EF0A80017D0D1 /* THQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THQueue.m; path = src/tharabas/util/THQueue.m; sourceTree = "<group>"; };
+		DD32A2B510D23D93005D88F6 /* NSData+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+TH.h"; path = "src/tharabas/categories/NSData+TH.h"; sourceTree = "<group>"; };
+		DD32A2B610D23D93005D88F6 /* NSData+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+TH.m"; path = "src/tharabas/categories/NSData+TH.m"; sourceTree = "<group>"; };
+		DD379BA110F4C617006F8553 /* NSTabView+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTabView+TH.h"; path = "src/tharabas/categories/NSTabView+TH.h"; sourceTree = "<group>"; };
+		DD379BA210F4C617006F8553 /* NSTabView+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTabView+TH.m"; path = "src/tharabas/categories/NSTabView+TH.m"; sourceTree = "<group>"; };
+		DD6B0BAA1092DE4200900A48 /* NSMutableString+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+TH.h"; path = "src/tharabas/categories/NSMutableString+TH.h"; sourceTree = "<group>"; };
+		DD6B0BAB1092DE4200900A48 /* NSMutableString+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableString+TH.m"; path = "src/tharabas/categories/NSMutableString+TH.m"; sourceTree = "<group>"; };
+		DD6B0C431092FA2F00900A48 /* ColorBlendColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorBlendColumn.h; path = src/tharabas/ui/view/ColorBlendColumn.h; sourceTree = "<group>"; };
+		DD6B0C441092FA2F00900A48 /* ColorBlendColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorBlendColumn.m; path = src/tharabas/ui/view/ColorBlendColumn.m; sourceTree = "<group>"; };
+		DD6CA28B113C030B003232E3 /* libLumumba Mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libLumumba Mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD6ED8041094914B0084F67E /* NSSet+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSet+TH.h"; path = "src/tharabas/categories/NSSet+TH.h"; sourceTree = "<group>"; };
+		DD6ED8051094914B0084F67E /* NSSet+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSet+TH.m"; path = "src/tharabas/categories/NSSet+TH.m"; sourceTree = "<group>"; };
+		DD6ED8181094A9A70084F67E /* THJunctionCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THJunctionCategories.h; path = src/tharabas/categories/THJunctionCategories.h; sourceTree = "<group>"; };
+		DD6ED8191094A9A70084F67E /* THJunctionCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THJunctionCategories.m; path = src/tharabas/categories/THJunctionCategories.m; sourceTree = "<group>"; };
+		DD6ED85E1094E0340084F67E /* th_transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = th_transition.h; path = src/tharabas/functions/th_transition.h; sourceTree = "<group>"; };
+		DD6ED85F1094E0340084F67E /* th_transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = th_transition.m; path = src/tharabas/functions/th_transition.m; sourceTree = "<group>"; };
+		DD6ED961109597270084F67E /* THSegmentedRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THSegmentedRect.h; path = src/tharabas/geometry/THSegmentedRect.h; sourceTree = "<group>"; };
+		DD6ED962109597270084F67E /* THSegmentedRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THSegmentedRect.m; path = src/tharabas/geometry/THSegmentedRect.m; sourceTree = "<group>"; };
+		DD6ED9FE1095D2580084F67E /* NSDate+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+TH.h"; path = "src/tharabas/categories/NSDate+TH.h"; sourceTree = "<group>"; };
+		DD6ED9FF1095D2580084F67E /* NSDate+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+TH.m"; path = "src/tharabas/categories/NSDate+TH.m"; sourceTree = "<group>"; };
+		DD86CD1D11195E5C008231E1 /* NSBezierPath+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBezierPath+TH.h"; path = "src/tharabas/categories/NSBezierPath+TH.h"; sourceTree = "<group>"; };
+		DD86CD1E11195E5C008231E1 /* NSBezierPath+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+TH.m"; path = "src/tharabas/categories/NSBezierPath+TH.m"; sourceTree = "<group>"; };
+		DDB115A91074C235003E3884 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		DDB115B11074C367003E3884 /* NSArray+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+TH.h"; path = "src/tharabas/categories/NSArray+TH.h"; sourceTree = "<group>"; };
+		DDB115B21074C367003E3884 /* NSArray+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+TH.m"; path = "src/tharabas/categories/NSArray+TH.m"; sourceTree = "<group>"; };
+		DDB115B31074C367003E3884 /* NSMutableArray+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+TH.h"; path = "src/tharabas/categories/NSMutableArray+TH.h"; sourceTree = "<group>"; };
+		DDB115B41074C367003E3884 /* NSMutableArray+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+TH.m"; path = "src/tharabas/categories/NSMutableArray+TH.m"; sourceTree = "<group>"; };
+		DDB115B51074C367003E3884 /* NSObject+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+TH.h"; path = "src/tharabas/categories/NSObject+TH.h"; sourceTree = "<group>"; };
+		DDB115B61074C367003E3884 /* NSObject+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TH.m"; path = "src/tharabas/categories/NSObject+TH.m"; sourceTree = "<group>"; };
+		DDB115B71074C367003E3884 /* NSString+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+TH.h"; path = "src/tharabas/categories/NSString+TH.h"; sourceTree = "<group>"; };
+		DDB115B81074C367003E3884 /* NSString+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+TH.m"; path = "src/tharabas/categories/NSString+TH.m"; sourceTree = "<group>"; };
+		DDB115B91074C367003E3884 /* NSView+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSView+TH.h"; path = "src/tharabas/categories/NSView+TH.h"; sourceTree = "<group>"; };
+		DDB115BA1074C367003E3884 /* NSView+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSView+TH.m"; path = "src/tharabas/categories/NSView+TH.m"; sourceTree = "<group>"; };
+		DDB115BB1074C367003E3884 /* THCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THCategories.h; path = src/tharabas/categories/THCategories.h; sourceTree = "<group>"; };
+		DDB115C71074C378003E3884 /* THGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THGeometry.h; path = src/tharabas/geometry/THGeometry.h; sourceTree = "<group>"; };
+		DDB115C91074C378003E3884 /* THGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THGrid.h; path = src/tharabas/geometry/THGrid.h; sourceTree = "<group>"; };
+		DDB115CA1074C378003E3884 /* THGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THGrid.m; path = src/tharabas/geometry/THGrid.m; sourceTree = "<group>"; };
+		DDB115CB1074C378003E3884 /* THMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THMatrix.h; path = src/tharabas/geometry/THMatrix.h; sourceTree = "<group>"; };
+		DDB115CC1074C378003E3884 /* THMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THMatrix.m; path = src/tharabas/geometry/THMatrix.m; sourceTree = "<group>"; };
+		DDB115CD1074C378003E3884 /* THPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THPoint.h; path = src/tharabas/geometry/THPoint.h; sourceTree = "<group>"; };
+		DDB115CE1074C378003E3884 /* THPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THPoint.m; path = src/tharabas/geometry/THPoint.m; sourceTree = "<group>"; };
+		DDB115CF1074C378003E3884 /* THRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THRect.h; path = src/tharabas/geometry/THRect.h; sourceTree = "<group>"; };
+		DDB115D01074C378003E3884 /* THRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THRect.m; path = src/tharabas/geometry/THRect.m; sourceTree = "<group>"; };
+		DDB115D11074C378003E3884 /* THSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THSize.h; path = src/tharabas/geometry/THSize.h; sourceTree = "<group>"; };
+		DDB115D21074C378003E3884 /* THSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THSize.m; path = src/tharabas/geometry/THSize.m; sourceTree = "<group>"; };
+		DDB115DF1074C38A003E3884 /* RushGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RushGridView.h; path = src/tharabas/ui/view/RushGridView.h; sourceTree = "<group>"; };
+		DDB115E01074C38A003E3884 /* RushGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RushGridView.m; path = src/tharabas/ui/view/RushGridView.m; sourceTree = "<group>"; };
+		DDB116111074C8A7003E3884 /* Lumumba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lumumba.h; path = src/tharabas/Lumumba.h; sourceTree = "<group>"; };
+		DDB116B01074DDBD003E3884 /* UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UI.h; path = src/tharabas/ui/UI.h; sourceTree = "<group>"; };
+		DDB117181074E276003E3884 /* NSColor+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+Conversion.h"; path = "src/tharabas/categories/NSColor+Conversion.h"; sourceTree = "<group>"; };
+		DDB117191074E276003E3884 /* NSColor+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+Conversion.m"; path = "src/tharabas/categories/NSColor+Conversion.m"; sourceTree = "<group>"; };
+		DDB117241074E2C3003E3884 /* ColorBlendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorBlendCell.h; path = src/tharabas/ui/view/ColorBlendCell.h; sourceTree = "<group>"; };
+		DDB117251074E2C3003E3884 /* ColorBlendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorBlendCell.m; path = src/tharabas/ui/view/ColorBlendCell.m; sourceTree = "<group>"; };
+		DDB3BE9310988382005A08F6 /* THGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THGradient.h; path = src/tharabas/ui/view/THGradient.h; sourceTree = "<group>"; };
+		DDB3BE9410988382005A08F6 /* THGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THGradient.m; path = src/tharabas/ui/view/THGradient.m; sourceTree = "<group>"; };
+		DDB3C0F91098EFCD005A08F6 /* THWebNamedColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THWebNamedColors.h; path = src/tharabas/ui/view/THWebNamedColors.h; sourceTree = "<group>"; };
+		DDB3C0FA1098EFCD005A08F6 /* THWebNamedColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THWebNamedColors.m; path = src/tharabas/ui/view/THWebNamedColors.m; sourceTree = "<group>"; };
+		DDB3C1D01099C10C005A08F6 /* NSAttributedString+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+TH.h"; path = "src/tharabas/categories/NSAttributedString+TH.h"; sourceTree = "<group>"; };
+		DDB3C1D11099C10C005A08F6 /* NSAttributedString+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+TH.m"; path = "src/tharabas/categories/NSAttributedString+TH.m"; sourceTree = "<group>"; };
+		DDB3C3B5109AE822005A08F6 /* NSFont+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFont+TH.h"; path = "src/tharabas/categories/NSFont+TH.h"; sourceTree = "<group>"; };
+		DDB3C3B6109AE822005A08F6 /* NSFont+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFont+TH.m"; path = "src/tharabas/categories/NSFont+TH.m"; sourceTree = "<group>"; };
+		DDB3C87C109C20DE005A08F6 /* THDateRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THDateRange.h; path = src/tharabas/geometry/THDateRange.h; sourceTree = "<group>"; };
+		DDB3C87D109C20DE005A08F6 /* THDateRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THDateRange.m; path = src/tharabas/geometry/THDateRange.m; sourceTree = "<group>"; };
+		DDB42C3B10A0CBF2002B5642 /* NSAffineTransform+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAffineTransform+TH.h"; path = "src/tharabas/categories/NSAffineTransform+TH.h"; sourceTree = "<group>"; };
+		DDB42C3C10A0CBF2002B5642 /* NSAffineTransform+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAffineTransform+TH.m"; path = "src/tharabas/categories/NSAffineTransform+TH.m"; sourceTree = "<group>"; };
+		DDB42DA010A1BD8E002B5642 /* THFlowWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THFlowWindow.h; path = src/tharabas/ui/view/THFlowWindow.h; sourceTree = "<group>"; };
+		DDB42DA110A1BD8E002B5642 /* THFlowWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THFlowWindow.m; path = src/tharabas/ui/view/THFlowWindow.m; sourceTree = "<group>"; };
+		DDB4713910AAB152001EA777 /* THControllerCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THControllerCategories.h; path = src/tharabas/categories/THControllerCategories.h; sourceTree = "<group>"; };
+		DDB4713A10AAB152001EA777 /* THControllerCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THControllerCategories.m; path = src/tharabas/categories/THControllerCategories.m; sourceTree = "<group>"; };
+		DDB4713D10AAB1CF001EA777 /* THFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THFunctions.h; path = src/tharabas/functions/THFunctions.h; sourceTree = "<group>"; };
+		DDB4719D10AADDB9001EA777 /* NSNumber+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+TH.h"; path = "src/tharabas/categories/NSNumber+TH.h"; sourceTree = "<group>"; };
+		DDB4719E10AADDB9001EA777 /* NSNumber+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+TH.m"; path = "src/tharabas/categories/NSNumber+TH.m"; sourceTree = "<group>"; };
+		DDBF6E8F10AFF82D0002F02E /* THSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THSugar.h; path = src/tharabas/categories/THSugar.h; sourceTree = "<group>"; };
+		DDC5887210DCFF3F007CF3AB /* THTreeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THTreeMap.h; path = src/tharabas/ui/view/THTreeMap.h; sourceTree = "<group>"; };
+		DDC5887310DCFF3F007CF3AB /* THTreeMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THTreeMap.m; path = src/tharabas/ui/view/THTreeMap.m; sourceTree = "<group>"; };
+		DDCCAC1D11ADC49A0087BAAE /* ColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColorManager.h; path = src/tharabas/ui/view/ColorManager.h; sourceTree = "<group>"; };
+		DDCCAC1E11ADC49A0087BAAE /* ColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColorManager.m; path = src/tharabas/ui/view/ColorManager.m; sourceTree = "<group>"; };
+		DDCE959511315D960047DCBE /* THSearchField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THSearchField.h; path = src/tharabas/ui/view/THSearchField.h; sourceTree = "<group>"; };
+		DDCE959611315D960047DCBE /* THSearchField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THSearchField.m; path = src/tharabas/ui/view/THSearchField.m; sourceTree = "<group>"; };
+		DDF4BB5E10A6D1770066702B /* THArgList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THArgList.h; path = src/tharabas/functions/THArgList.h; sourceTree = "<group>"; };
+		DDF4BB5F10A6D1770066702B /* THArgList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THArgList.m; path = src/tharabas/functions/THArgList.m; sourceTree = "<group>"; };
+		DDF5678C10B55C09007445C0 /* THGeometricFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THGeometricFunctions.h; path = src/tharabas/geometry/THGeometricFunctions.h; sourceTree = "<group>"; };
+		DDF5678D10B55C09007445C0 /* THGeometricFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THGeometricFunctions.m; path = src/tharabas/geometry/THGeometricFunctions.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				DDB115AA1074C235003E3884 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD6CA289113C030B003232E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* Lumumba.framework */,
+				DD6CA28B113C030B003232E3 /* libLumumba Mobile.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Lumumba */ = {
+			isa = PBXGroup;
+			children = (
+				DD6CA29A113C0338003232E3 /* Shared */,
+				DD6CA299113C0332003232E3 /* Desktop */,
+				DD6CA296113C0327003232E3 /* Mobile */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = Lumumba;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DD6ED85D1094DFE60084F67E /* Functions */,
+				DDB115AC1074C33D003E3884 /* Categories */,
+				DD2EB13B110EF0390017D0D1 /* Utility */,
+				DDB115AE1074C34C003E3884 /* Geometry */,
+				DDB115AD1074C343003E3884 /* UI */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+				DDB115A91074C235003E3884 /* QuartzCore.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* Lumumba_Prefix.pch */,
+				DDB116111074C8A7003E3884 /* Lumumba.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		DD2EB13B110EF0390017D0D1 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DDB3C87C109C20DE005A08F6 /* THDateRange.h */,
+				DDB3C87D109C20DE005A08F6 /* THDateRange.m */,
+				DD2EB13D110EF0A80017D0D1 /* THQueue.h */,
+				DD2EB13E110EF0A80017D0D1 /* THQueue.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		DD6CA296113C0327003232E3 /* Mobile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mobile;
+			sourceTree = "<group>";
+		};
+		DD6CA299113C0332003232E3 /* Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+			);
+			name = Desktop;
+			sourceTree = "<group>";
+		};
+		DD6CA29A113C0338003232E3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		DD6ED85D1094DFE60084F67E /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				DDB4713D10AAB1CF001EA777 /* THFunctions.h */,
+				DD6ED85E1094E0340084F67E /* th_transition.h */,
+				DD6ED85F1094E0340084F67E /* th_transition.m */,
+				DDF4BB5E10A6D1770066702B /* THArgList.h */,
+				DDF4BB5F10A6D1770066702B /* THArgList.m */,
+			);
+			name = Functions;
+			sourceTree = "<group>";
+		};
+		DDB115AC1074C33D003E3884 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DDB115BB1074C367003E3884 /* THCategories.h */,
+				DDBF6E8F10AFF82D0002F02E /* THSugar.h */,
+				DDB115B51074C367003E3884 /* NSObject+TH.h */,
+				DDB115B61074C367003E3884 /* NSObject+TH.m */,
+				DDB4719D10AADDB9001EA777 /* NSNumber+TH.h */,
+				DDB4719E10AADDB9001EA777 /* NSNumber+TH.m */,
+				DDB115B71074C367003E3884 /* NSString+TH.h */,
+				DDB115B81074C367003E3884 /* NSString+TH.m */,
+				DD6B0BAA1092DE4200900A48 /* NSMutableString+TH.h */,
+				DD6B0BAB1092DE4200900A48 /* NSMutableString+TH.m */,
+				DDB3C1D01099C10C005A08F6 /* NSAttributedString+TH.h */,
+				DDB3C1D11099C10C005A08F6 /* NSAttributedString+TH.m */,
+				DDB115B11074C367003E3884 /* NSArray+TH.h */,
+				DDB115B21074C367003E3884 /* NSArray+TH.m */,
+				DDB115B31074C367003E3884 /* NSMutableArray+TH.h */,
+				DDB115B41074C367003E3884 /* NSMutableArray+TH.m */,
+				DD6ED8041094914B0084F67E /* NSSet+TH.h */,
+				DD6ED8051094914B0084F67E /* NSSet+TH.m */,
+				DD6ED9FE1095D2580084F67E /* NSDate+TH.h */,
+				DD6ED9FF1095D2580084F67E /* NSDate+TH.m */,
+				DD32A2B510D23D93005D88F6 /* NSData+TH.h */,
+				DD32A2B610D23D93005D88F6 /* NSData+TH.m */,
+				DDB3C3B5109AE822005A08F6 /* NSFont+TH.h */,
+				DDB3C3B6109AE822005A08F6 /* NSFont+TH.m */,
+				DD29A8B6109F11E000A003A0 /* NSEvent+TH.h */,
+				DD29A8B7109F11E000A003A0 /* NSEvent+TH.m */,
+				DDB115B91074C367003E3884 /* NSView+TH.h */,
+				DDB115BA1074C367003E3884 /* NSView+TH.m */,
+				DDB117181074E276003E3884 /* NSColor+Conversion.h */,
+				DDB117191074E276003E3884 /* NSColor+Conversion.m */,
+				DDB42C3B10A0CBF2002B5642 /* NSAffineTransform+TH.h */,
+				DDB42C3C10A0CBF2002B5642 /* NSAffineTransform+TH.m */,
+				DD6ED8181094A9A70084F67E /* THJunctionCategories.h */,
+				DD6ED8191094A9A70084F67E /* THJunctionCategories.m */,
+				DDB3C0F91098EFCD005A08F6 /* THWebNamedColors.h */,
+				DDB3C0FA1098EFCD005A08F6 /* THWebNamedColors.m */,
+				DDB4713910AAB152001EA777 /* THControllerCategories.h */,
+				DDB4713A10AAB152001EA777 /* THControllerCategories.m */,
+				DD379BA110F4C617006F8553 /* NSTabView+TH.h */,
+				DD379BA210F4C617006F8553 /* NSTabView+TH.m */,
+				DD86CD1D11195E5C008231E1 /* NSBezierPath+TH.h */,
+				DD86CD1E11195E5C008231E1 /* NSBezierPath+TH.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		DDB115AD1074C343003E3884 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DDB116B01074DDBD003E3884 /* UI.h */,
+				DDCCAC1D11ADC49A0087BAAE /* ColorManager.h */,
+				DDCCAC1E11ADC49A0087BAAE /* ColorManager.m */,
+				DDB115DF1074C38A003E3884 /* RushGridView.h */,
+				DDB115E01074C38A003E3884 /* RushGridView.m */,
+				DDB117241074E2C3003E3884 /* ColorBlendCell.h */,
+				DDB117251074E2C3003E3884 /* ColorBlendCell.m */,
+				DD6B0C431092FA2F00900A48 /* ColorBlendColumn.h */,
+				DD6B0C441092FA2F00900A48 /* ColorBlendColumn.m */,
+				DDB3BE9310988382005A08F6 /* THGradient.h */,
+				DDB3BE9410988382005A08F6 /* THGradient.m */,
+				DDB42DA010A1BD8E002B5642 /* THFlowWindow.h */,
+				DDB42DA110A1BD8E002B5642 /* THFlowWindow.m */,
+				DDC5887210DCFF3F007CF3AB /* THTreeMap.h */,
+				DDC5887310DCFF3F007CF3AB /* THTreeMap.m */,
+				DDCE959511315D960047DCBE /* THSearchField.h */,
+				DDCE959611315D960047DCBE /* THSearchField.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		DDB115AE1074C34C003E3884 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				DDB115C71074C378003E3884 /* THGeometry.h */,
+				DDB115C91074C378003E3884 /* THGrid.h */,
+				DDB115CA1074C378003E3884 /* THGrid.m */,
+				DDB115CB1074C378003E3884 /* THMatrix.h */,
+				DDB115CC1074C378003E3884 /* THMatrix.m */,
+				DDB115CD1074C378003E3884 /* THPoint.h */,
+				DDB115CE1074C378003E3884 /* THPoint.m */,
+				DDB115CF1074C378003E3884 /* THRect.h */,
+				DDB115D01074C378003E3884 /* THRect.m */,
+				DDB115D11074C378003E3884 /* THSize.h */,
+				DDB115D21074C378003E3884 /* THSize.m */,
+				DD6ED961109597270084F67E /* THSegmentedRect.h */,
+				DD6ED962109597270084F67E /* THSegmentedRect.m */,
+				DDF5678C10B55C09007445C0 /* THGeometricFunctions.h */,
+				DDF5678D10B55C09007445C0 /* THGeometricFunctions.m */,
+			);
+			name = Geometry;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB115BC1074C367003E3884 /* NSArray+TH.h in Headers */,
+				DDB115BE1074C367003E3884 /* NSMutableArray+TH.h in Headers */,
+				DDB115C01074C367003E3884 /* NSObject+TH.h in Headers */,
+				DDB115C21074C367003E3884 /* NSString+TH.h in Headers */,
+				DDB115C41074C367003E3884 /* NSView+TH.h in Headers */,
+				DDB115C61074C367003E3884 /* THCategories.h in Headers */,
+				DDB115D31074C378003E3884 /* THGeometry.h in Headers */,
+				DDB115D51074C378003E3884 /* THGrid.h in Headers */,
+				DDB115D71074C378003E3884 /* THMatrix.h in Headers */,
+				DDB115D91074C378003E3884 /* THPoint.h in Headers */,
+				DDB115DB1074C378003E3884 /* THRect.h in Headers */,
+				DDB115DD1074C378003E3884 /* THSize.h in Headers */,
+				DDB115E11074C38A003E3884 /* RushGridView.h in Headers */,
+				DDB116121074C8A7003E3884 /* Lumumba.h in Headers */,
+				DDB116B11074DDBD003E3884 /* UI.h in Headers */,
+				DDB1171A1074E276003E3884 /* NSColor+Conversion.h in Headers */,
+				DDB117261074E2C3003E3884 /* ColorBlendCell.h in Headers */,
+				DD6B0BAC1092DE4200900A48 /* NSMutableString+TH.h in Headers */,
+				DD6B0C451092FA2F00900A48 /* ColorBlendColumn.h in Headers */,
+				DD6ED8061094914B0084F67E /* NSSet+TH.h in Headers */,
+				DD6ED81A1094A9A70084F67E /* THJunctionCategories.h in Headers */,
+				DD6ED8601094E0340084F67E /* th_transition.h in Headers */,
+				DD6ED963109597270084F67E /* THSegmentedRect.h in Headers */,
+				DD6EDA001095D2580084F67E /* NSDate+TH.h in Headers */,
+				DDB3BE9510988382005A08F6 /* THGradient.h in Headers */,
+				DDB3C0FB1098EFCD005A08F6 /* THWebNamedColors.h in Headers */,
+				DDB3C1D21099C10C005A08F6 /* NSAttributedString+TH.h in Headers */,
+				DDB3C3B7109AE822005A08F6 /* NSFont+TH.h in Headers */,
+				DDB3C8BB109C317F005A08F6 /* THDateRange.h in Headers */,
+				DD29A8B8109F11E000A003A0 /* NSEvent+TH.h in Headers */,
+				DDB42C3D10A0CBF2002B5642 /* NSAffineTransform+TH.h in Headers */,
+				DDB42DA210A1BD8E002B5642 /* THFlowWindow.h in Headers */,
+				DDF4BB6010A6D1770066702B /* THArgList.h in Headers */,
+				DDB4713B10AAB152001EA777 /* THControllerCategories.h in Headers */,
+				DDB4713E10AAB1CF001EA777 /* THFunctions.h in Headers */,
+				DDB4719F10AADDB9001EA777 /* NSNumber+TH.h in Headers */,
+				DDBF6EAD10AFF9120002F02E /* THSugar.h in Headers */,
+				DDF5678E10B55C09007445C0 /* THGeometricFunctions.h in Headers */,
+				DD32A2B710D23D93005D88F6 /* NSData+TH.h in Headers */,
+				DDC5887410DCFF3F007CF3AB /* THTreeMap.h in Headers */,
+				DD379BA310F4C617006F8553 /* NSTabView+TH.h in Headers */,
+				DD2EB13F110EF0A80017D0D1 /* THQueue.h in Headers */,
+				DD86CD1F11195E5C008231E1 /* NSBezierPath+TH.h in Headers */,
+				DDCE959711315D960047DCBE /* THSearchField.h in Headers */,
+				DDCCAC1F11ADC49A0087BAAE /* ColorManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD6CA287113C030B003232E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* Lumumba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "Lumumba" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lumumba;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = Lumumba;
+			productReference = 8DC2EF5B0486A6940098B216 /* Lumumba.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD6CA28A113C030B003232E3 /* Lumumba Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD6CA297113C0327003232E3 /* Build configuration list for PBXNativeTarget "Lumumba Mobile" */;
+			buildPhases = (
+				DD6CA287113C030B003232E3 /* Headers */,
+				DD6CA288113C030B003232E3 /* Sources */,
+				DD6CA289113C030B003232E3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lumumba Mobile";
+			productName = "Lumumba Mobile";
+			productReference = DD6CA28B113C030B003232E3 /* libLumumba Mobile.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "Lumumba" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Lumumba */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* Lumumba */,
+				DD6CA28A113C030B003232E3 /* Lumumba Mobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB115BD1074C367003E3884 /* NSArray+TH.m in Sources */,
+				DDB115BF1074C367003E3884 /* NSMutableArray+TH.m in Sources */,
+				DDB115C11074C367003E3884 /* NSObject+TH.m in Sources */,
+				DDB115C31074C367003E3884 /* NSString+TH.m in Sources */,
+				DDB115C51074C367003E3884 /* NSView+TH.m in Sources */,
+				DDB115D61074C378003E3884 /* THGrid.m in Sources */,
+				DDB115D81074C378003E3884 /* THMatrix.m in Sources */,
+				DDB115DA1074C378003E3884 /* THPoint.m in Sources */,
+				DDB115DC1074C378003E3884 /* THRect.m in Sources */,
+				DDB115DE1074C378003E3884 /* THSize.m in Sources */,
+				DDB115E21074C38A003E3884 /* RushGridView.m in Sources */,
+				DDB1171B1074E276003E3884 /* NSColor+Conversion.m in Sources */,
+				DDB117271074E2C3003E3884 /* ColorBlendCell.m in Sources */,
+				DD6B0BAD1092DE4200900A48 /* NSMutableString+TH.m in Sources */,
+				DD6B0C461092FA2F00900A48 /* ColorBlendColumn.m in Sources */,
+				DD6ED8071094914B0084F67E /* NSSet+TH.m in Sources */,
+				DD6ED81B1094A9A70084F67E /* THJunctionCategories.m in Sources */,
+				DD6ED8611094E0340084F67E /* th_transition.m in Sources */,
+				DD6ED964109597270084F67E /* THSegmentedRect.m in Sources */,
+				DD6EDA011095D2580084F67E /* NSDate+TH.m in Sources */,
+				DDB3BE9610988382005A08F6 /* THGradient.m in Sources */,
+				DDB3C0FC1098EFCD005A08F6 /* THWebNamedColors.m in Sources */,
+				DDB3C1D31099C10C005A08F6 /* NSAttributedString+TH.m in Sources */,
+				DDB3C3B8109AE822005A08F6 /* NSFont+TH.m in Sources */,
+				DDB3C8A3109C3163005A08F6 /* THDateRange.m in Sources */,
+				DD29A8B9109F11E000A003A0 /* NSEvent+TH.m in Sources */,
+				DDB42C3E10A0CBF2002B5642 /* NSAffineTransform+TH.m in Sources */,
+				DDB42DA310A1BD8E002B5642 /* THFlowWindow.m in Sources */,
+				DDF4BB6110A6D1770066702B /* THArgList.m in Sources */,
+				DDB4713C10AAB152001EA777 /* THControllerCategories.m in Sources */,
+				DDB471A010AADDB9001EA777 /* NSNumber+TH.m in Sources */,
+				DDF5678F10B55C09007445C0 /* THGeometricFunctions.m in Sources */,
+				DD32A2B810D23D93005D88F6 /* NSData+TH.m in Sources */,
+				DDC5887510DCFF3F007CF3AB /* THTreeMap.m in Sources */,
+				DD379BA410F4C617006F8553 /* NSTabView+TH.m in Sources */,
+				DD2EB140110EF0A80017D0D1 /* THQueue.m in Sources */,
+				DD86CD2011195E5C008231E1 /* NSBezierPath+TH.m in Sources */,
+				DDCE959811315D960047DCBE /* THSearchField.m in Sources */,
+				DDCCAC2011ADC49A0087BAAE /* ColorManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD6CA288113C030B003232E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Lumumba_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Lumumba;
+				SDKROOT = "";
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Lumumba_Prefix.pch;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Lumumba;
+				SDKROOT = "";
+				VALID_ARCHS = "i386 x86_64";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		DD6CA28C113C030B003232E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = "Lumumba Mobile";
+			};
+			name = Debug;
+		};
+		DD6CA28D113C030B003232E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = "Lumumba Mobile";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "Lumumba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "Lumumba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD6CA297113C0327003232E3 /* Build configuration list for PBXNativeTarget "Lumumba Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD6CA28C113C030B003232E3 /* Debug */,
+				DD6CA28D113C030B003232E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
