@@ -32,3 +32,4 @@
 #import <Lumumba/THControllerCategories.h>
 #import <Lumumba/NSTabView+TH.h>
 #import <Lumumba/NSColor+Conversion.h>
+#import <Lumumba/NSString+TH_UserDefaults.h>

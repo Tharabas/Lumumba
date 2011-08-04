@@ -375,21 +375,3 @@
 }
 
 @end
-
-@implementation NSString (TH_UserDefaults)
-
-#define UVAL(T,N) -(T) N##InDefaults { \
-  return [[NSUserDefaults standardUserDefaults] N##ForKey:self]; \
-}
-
-UVAL(id, object)
-UVAL(BOOL, bool)
-UVAL(NSInteger, integer)
-UVAL(double, double)
-UVAL(NSString *, string)
-UVAL(NSURL *, URL)
-UVAL(NSArray *, array)
-
-@end
-
-

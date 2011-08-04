@@ -15,6 +15,8 @@
 		DD2EB140110EF0A80017D0D1 /* THQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2EB13E110EF0A80017D0D1 /* THQueue.m */; };
 		DD32A2B710D23D93005D88F6 /* NSData+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DD32A2B510D23D93005D88F6 /* NSData+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD32A2B810D23D93005D88F6 /* NSData+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD32A2B610D23D93005D88F6 /* NSData+TH.m */; };
+		DD34CBD213EA7DAF00681EAE /* NSString+TH_UserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = DD34CBD013EA7DAF00681EAE /* NSString+TH_UserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD34CBD313EA7DAF00681EAE /* NSString+TH_UserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = DD34CBD113EA7DAF00681EAE /* NSString+TH_UserDefaults.m */; };
 		DD379BA310F4C617006F8553 /* NSTabView+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DD379BA110F4C617006F8553 /* NSTabView+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD379BA410F4C617006F8553 /* NSTabView+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD379BA210F4C617006F8553 /* NSTabView+TH.m */; };
 		DD6B0BAC1092DE4200900A48 /* NSMutableString+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6B0BAA1092DE4200900A48 /* NSMutableString+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -111,6 +113,8 @@
 		DD2EB13E110EF0A80017D0D1 /* THQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THQueue.m; path = src/tharabas/util/THQueue.m; sourceTree = "<group>"; };
 		DD32A2B510D23D93005D88F6 /* NSData+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+TH.h"; path = "src/tharabas/categories/NSData+TH.h"; sourceTree = "<group>"; };
 		DD32A2B610D23D93005D88F6 /* NSData+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+TH.m"; path = "src/tharabas/categories/NSData+TH.m"; sourceTree = "<group>"; };
+		DD34CBD013EA7DAF00681EAE /* NSString+TH_UserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+TH_UserDefaults.h"; path = "src/tharabas/categories/NSString+TH_UserDefaults.h"; sourceTree = "<group>"; };
+		DD34CBD113EA7DAF00681EAE /* NSString+TH_UserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+TH_UserDefaults.m"; path = "src/tharabas/categories/NSString+TH_UserDefaults.m"; sourceTree = "<group>"; };
 		DD379BA110F4C617006F8553 /* NSTabView+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTabView+TH.h"; path = "src/tharabas/categories/NSTabView+TH.h"; sourceTree = "<group>"; };
 		DD379BA210F4C617006F8553 /* NSTabView+TH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTabView+TH.m"; path = "src/tharabas/categories/NSTabView+TH.m"; sourceTree = "<group>"; };
 		DD6B0BAA1092DE4200900A48 /* NSMutableString+TH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableString+TH.h"; path = "src/tharabas/categories/NSMutableString+TH.h"; sourceTree = "<group>"; };
@@ -350,6 +354,8 @@
 				DDB4719E10AADDB9001EA777 /* NSNumber+TH.m */,
 				DDB115B71074C367003E3884 /* NSString+TH.h */,
 				DDB115B81074C367003E3884 /* NSString+TH.m */,
+				DD34CBD013EA7DAF00681EAE /* NSString+TH_UserDefaults.h */,
+				DD34CBD113EA7DAF00681EAE /* NSString+TH_UserDefaults.m */,
 				DD6B0BAA1092DE4200900A48 /* NSMutableString+TH.h */,
 				DD6B0BAB1092DE4200900A48 /* NSMutableString+TH.m */,
 				DDB3C1D01099C10C005A08F6 /* NSAttributedString+TH.h */,
@@ -486,6 +492,7 @@
 				DD86CD1F11195E5C008231E1 /* NSBezierPath+TH.h in Headers */,
 				DDCE959711315D960047DCBE /* THSearchField.h in Headers */,
 				DDCCAC1F11ADC49A0087BAAE /* ColorManager.h in Headers */,
+				DD34CBD213EA7DAF00681EAE /* NSString+TH_UserDefaults.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +623,7 @@
 				DD86CD2011195E5C008231E1 /* NSBezierPath+TH.m in Sources */,
 				DDCE959811315D960047DCBE /* THSearchField.m in Sources */,
 				DDCCAC2011ADC49A0087BAAE /* ColorManager.m in Sources */,
+				DD34CBD313EA7DAF00681EAE /* NSString+TH_UserDefaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

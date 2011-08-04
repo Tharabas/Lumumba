@@ -177,20 +177,3 @@
 
 
 @end
-
-//
-// these should be put into NSUserDefaults+TH
-//
-@interface NSString (TH_UserDefaults)
-
-@property (readonly) NSString *stringInDefaults;
-@property (readonly) BOOL boolInDefaults;
-@property (readonly) NSInteger integerInDefaults;
-@property (readonly) double doubleInDefaults;
-@property (readonly) NSURL *URLInDefaults;
-@property (readonly) NSArray *arrayInDefaults;
-@property (readonly) id objectInDefaults;
-
-@end
-
-
