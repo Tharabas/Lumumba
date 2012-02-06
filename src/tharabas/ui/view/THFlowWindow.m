@@ -32,7 +32,7 @@
   // we should prepare a rect for that
   THRect *contentRect = [THRect rectOf:view];
   
-  if ((self == [super initWithContentRect:contentRect.rect
+  if ((self = [super initWithContentRect:contentRect.rect
                               styleMask:NSBorderlessWindowMask
                                 backing:NSBackingStoreBuffered
                                   defer:NO])) 
@@ -60,7 +60,7 @@
 -(THFlowWindow *)initWithView:(NSView *)view 
                    atPosition:(NSPoint)pt
 {
-  if ((self == [self initWithView:view 
+  if ((self = [self initWithView:view 
                      atPosition:pt
                        inWindow:nil 
                   withAlignment:NSZeroPoint]))
