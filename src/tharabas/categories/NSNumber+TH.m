@@ -62,8 +62,8 @@
   double omega = to.doubleValue;
   double delta = by.doubleValue;
   
-  if (alpha > omega && delta > 0
-   || alpha < omega && delta < 0
+  if ((alpha > omega && delta > 0)
+   || (alpha < omega && delta < 0)
   ) {
     delta = -delta;
   }
