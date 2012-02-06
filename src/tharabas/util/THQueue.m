@@ -31,8 +31,15 @@
   if ((self = super.init)) {
     queue = dispatch_queue_create([name UTF8String], attr);
   }
-  
   return self;
+}
+
++(id)queueWithName:(NSString *)name {
+  return [[[self alloc] initWithName:name] autorelease];
+}
+
++(id)queueWithName:(NSString *)name attributes:(dispatch_queue_attr_t)attr {
+  return [[[self alloc] initWithName:name attributes:attr] autorelease];
 }
 
 -(void)dealloc {

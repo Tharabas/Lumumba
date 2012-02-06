@@ -17,6 +17,9 @@
 -(id)initWithName:(NSString *)name;
 -(id)initWithName:(NSString *)name attributes:(dispatch_queue_attr_t)attr;
 
++(id)queueWithName:(NSString *)name;
++(id)queueWithName:(NSString *)name attributes:(dispatch_queue_attr_t)attr;
+
 +(void)sync:(THSimpleBlock)block;
 -(void)sync:(THSimpleBlock)block;
 
