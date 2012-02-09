@@ -34,11 +34,11 @@
   return self;
 }
 
-+(id)queueWithName:(NSString *)name {
++(THQueue *)queueWithName:(NSString *)name {
   return [[[self alloc] initWithName:name] autorelease];
 }
 
-+(id)queueWithName:(NSString *)name attributes:(dispatch_queue_attr_t)attr {
++(THQueue *)queueWithName:(NSString *)name attributes:(dispatch_queue_attr_t)attr {
   return [[[self alloc] initWithName:name attributes:attr] autorelease];
 }
 
