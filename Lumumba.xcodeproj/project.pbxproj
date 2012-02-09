@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		DD1749D414E3B85D002FC0CA /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D6A5FE840307C02AAC07 /* AppKit.framework */; };
+		DD1749D514E3B869002FC0CA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F7E79907B2D74100F64583 /* CoreData.framework */; };
+		DD1749D614E3B872002FC0CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0867D69BFE84028FC02AAC07 /* Foundation.framework */; };
 		DD29A8B8109F11E000A003A0 /* NSEvent+TH.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29A8B6109F11E000A003A0 /* NSEvent+TH.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD29A8B9109F11E000A003A0 /* NSEvent+TH.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29A8B7109F11E000A003A0 /* NSEvent+TH.m */; };
 		DD2EB13F110EF0A80017D0D1 /* THQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = DD2EB13D110EF0A80017D0D1 /* THQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -202,6 +205,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD1749D614E3B872002FC0CA /* Foundation.framework in Frameworks */,
+				DD1749D514E3B869002FC0CA /* CoreData.framework in Frameworks */,
+				DD1749D414E3B85D002FC0CA /* AppKit.framework in Frameworks */,
 				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
 				DDB115AA1074C235003E3884 /* QuartzCore.framework in Frameworks */,
 			);
@@ -659,8 +665,8 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
@@ -670,11 +676,12 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "~/Library/Frameworks";
+				INSTALL_PATH = "~/Library/Frameworks/";
 				MACH_O_TYPE = mh_dylib;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Lumumba;
 				SDKROOT = "";
+				SKIP_INSTALL = NO;
 				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -687,8 +694,8 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
 				FRAMEWORK_VERSION = A;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -696,11 +703,12 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "~/Library/Frameworks";
+				INSTALL_PATH = "~/Library/Frameworks/";
 				MACH_O_TYPE = mh_dylib;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Lumumba;
 				SDKROOT = "";
+				SKIP_INSTALL = NO;
 				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -714,6 +722,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -726,6 +735,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;
