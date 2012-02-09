@@ -75,15 +75,16 @@
 +(THGradient *)glossyGradientWithColor:(NSColor *)color {
   THGradient *re = THGradient.alloc;
   
-  NSColor *darker   = color.darker;
-  NSColor *brighter = color.brighter;
+  NSColor *rgbColor = color.calibratedRGBColor;
+  NSColor *darker   = rgbColor.darker;
+  NSColor *brighter = rgbColor.brighter;
   NSColor *contrast = brighter.brighter;
   NSColor *mixin    = NSColor.yellowColor;
-  mixin = [mixin blendedColorWithFraction:1.0 - color.saturationComponent 
+  mixin = [mixin blendedColorWithFraction:1.0 - rgbColor.saturationComponent 
                                   ofColor:NSColor.whiteColor];
   
-  NSColor *highlight = [[color blendedColorWithFraction:0.2 ofColor:mixin]
-                        colorWithAlphaComponent:color.alphaComponent];
+  NSColor *highlight = [[rgbColor blendedColorWithFraction:0.2 ofColor:mixin]
+                        colorWithAlphaComponent:rgbColor.alphaComponent];
   
   const CGFloat distance = 0.05;
   
