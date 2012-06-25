@@ -61,8 +61,6 @@
 		DDB115DC1074C378003E3884 /* THRect.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115D01074C378003E3884 /* THRect.m */; };
 		DDB115DD1074C378003E3884 /* THSize.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115D11074C378003E3884 /* THSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDB115DE1074C378003E3884 /* THSize.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115D21074C378003E3884 /* THSize.m */; };
-		DDB115E11074C38A003E3884 /* RushGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB115DF1074C38A003E3884 /* RushGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DDB115E21074C38A003E3884 /* RushGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB115E01074C38A003E3884 /* RushGridView.m */; };
 		DDB116121074C8A7003E3884 /* Lumumba.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB116111074C8A7003E3884 /* Lumumba.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDB116B11074DDBD003E3884 /* UI.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB116B01074DDBD003E3884 /* UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDB1171A1074E276003E3884 /* NSColor+Conversion.h in Headers */ = {isa = PBXBuildFile; fileRef = DDB117181074E276003E3884 /* NSColor+Conversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -160,8 +158,6 @@
 		DDB115D01074C378003E3884 /* THRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THRect.m; path = src/tharabas/geometry/THRect.m; sourceTree = "<group>"; };
 		DDB115D11074C378003E3884 /* THSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THSize.h; path = src/tharabas/geometry/THSize.h; sourceTree = "<group>"; };
 		DDB115D21074C378003E3884 /* THSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THSize.m; path = src/tharabas/geometry/THSize.m; sourceTree = "<group>"; };
-		DDB115DF1074C38A003E3884 /* RushGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RushGridView.h; path = src/tharabas/ui/view/RushGridView.h; sourceTree = "<group>"; };
-		DDB115E01074C38A003E3884 /* RushGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RushGridView.m; path = src/tharabas/ui/view/RushGridView.m; sourceTree = "<group>"; };
 		DDB116111074C8A7003E3884 /* Lumumba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lumumba.h; path = src/tharabas/Lumumba.h; sourceTree = "<group>"; };
 		DDB116B01074DDBD003E3884 /* UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UI.h; path = src/tharabas/ui/UI.h; sourceTree = "<group>"; };
 		DDB117181074E276003E3884 /* NSColor+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+Conversion.h"; path = "src/tharabas/categories/NSColor+Conversion.h"; sourceTree = "<group>"; };
@@ -406,8 +402,6 @@
 				DDB116B01074DDBD003E3884 /* UI.h */,
 				DDCCAC1D11ADC49A0087BAAE /* ColorManager.h */,
 				DDCCAC1E11ADC49A0087BAAE /* ColorManager.m */,
-				DDB115DF1074C38A003E3884 /* RushGridView.h */,
-				DDB115E01074C38A003E3884 /* RushGridView.m */,
 				DDB117241074E2C3003E3884 /* ColorBlendCell.h */,
 				DDB117251074E2C3003E3884 /* ColorBlendCell.m */,
 				DD6B0C431092FA2F00900A48 /* ColorBlendColumn.h */,
@@ -465,7 +459,6 @@
 				DDB115D91074C378003E3884 /* THPoint.h in Headers */,
 				DDB115DB1074C378003E3884 /* THRect.h in Headers */,
 				DDB115DD1074C378003E3884 /* THSize.h in Headers */,
-				DDB115E11074C38A003E3884 /* RushGridView.h in Headers */,
 				DDB116121074C8A7003E3884 /* Lumumba.h in Headers */,
 				DDB116B11074DDBD003E3884 /* UI.h in Headers */,
 				DDB1171A1074E276003E3884 /* NSColor+Conversion.h in Headers */,
@@ -603,7 +596,6 @@
 				DDB115DA1074C378003E3884 /* THPoint.m in Sources */,
 				DDB115DC1074C378003E3884 /* THRect.m in Sources */,
 				DDB115DE1074C378003E3884 /* THSize.m in Sources */,
-				DDB115E21074C38A003E3884 /* RushGridView.m in Sources */,
 				DDB1171B1074E276003E3884 /* NSColor+Conversion.m in Sources */,
 				DDB117271074E2C3003E3884 /* ColorBlendCell.m in Sources */,
 				DD6B0BAD1092DE4200900A48 /* NSMutableString+TH.m in Sources */,

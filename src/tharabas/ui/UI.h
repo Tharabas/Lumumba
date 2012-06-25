@@ -7,7 +7,6 @@
 //
 
 #import <Lumumba/ColorManager.h>
-#import <Lumumba/RushGridView.h>
 #import <Lumumba/NSColor+Conversion.h>
 #import <Lumumba/ColorBlendCell.h>
 #import <Lumumba/ColorBlendColumn.h>
