@@ -1,3 +1,14 @@
+# CURRENTLY OUT OF SUPPORT #
+
+I'm quite sorry to tell you guys, but at this time, i cannot afford the time in keeping up this Project as it should be.
+
+The Categories inside may still be worth taken a look, but I can not recommend using them in any production system.
+
+But the development of the __Lumumba__ framework hasn't been completely abandoned. I'm just focusing on the Mobile part,
+so have a look at https://github.com/Tharabas/lumobile for the iOS version of this framework.
+
+-- Ben, December 2012
+
 # Cocoa best practice extensions
 
 Lumumba contains a disjoint set of features
